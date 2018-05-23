@@ -10,25 +10,27 @@
 
 
 </head>
-<body>
-  <div class="container">
+<body class="container">
+  <main>
     <div class="tab">
-      <button class="tablinks" onclick="contactTabs(event, 'menu')">Mes contacts</button>
-      <button class="tablinks" onclick="contactTabs(event, 'addContact')">Ajouter</button>
+      <button class="tablinks active" onclick="contactTabs(event, 'mainTab')">Mes contacts</button>
+      <button class="tablinks" onclick="contactTabs(event, 'addContactTab')">Ajouter</button>
+      <button class="tablinks" id="delete">Supprimer les contacts</button>
     </div>
 
-    <div id="menu" class="tabcontent">
-      <section id="menu">
-          <input type="text" name="search">
+    <div id="mainTab" class="tabcontent container">
 
-      </section>
+      <h1>Eleves de Simplon</h1>
+      <input type="text" name="search" placeholder="Rechercher...">
 
       <section id="contactList">
 
       </section>
+
     </div>
 
-    <div id="addContact" class="tabcontent">
+    <div id="addContactTab" class="tabcontent container">
+      <h1>Ajouter un eleve</h1>
       <form>
         <input type="text" id="name" name="name" placeholder="Nom">
         <input type="text" id="phone" name="phone" placeholder="Numéro de Tel.">
@@ -36,7 +38,7 @@
         <input type="submit" value="Submit">
       </form>
     </div>
-  </div>
+  </main>
 
   <!-- Fichier JS -->
   <script src="js/script.js"></script>

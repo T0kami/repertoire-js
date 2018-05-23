@@ -1,3 +1,116 @@
-#addContact{
+@font-face {
+    font-family: chalkboard;
+    src: url("../fonts/chalkboard.ttf");
+}
+.tab{
+  display:flex;
+
+}
+#delete{
+  margin-left: auto;
+}
+#addContactTab{
   display:none;
+  flex-flow: column;
+  align-items: center;
+  color:white;
+}
+main{
+  background-image: url("../images/tableau.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:800px;
+  padding: 40px;
+  height:560px;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+.container{
+display:flex;
+justify-content: center;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.tablinks{
+background-color: transparent;
+color:white;
+border:none;
+outline:none;
+}
+
+#contactList, #mainTab{
+  color:white;
+}
+#mainTab{
+
+  flex-flow: column;
+  align-items: center;
+
+}
+input[name=search]{
+  width:250px;
+}
+#contactList{
+  width:250px;
+  height:250px;
+  overflow: scroll;
+  margin-top: 10px;
+}
+
+.active{
+  text-decoration: underline;
+
+}
+#addContactTab > form{
+  display:flex;
+
+  flex-flow: column;
+  align-items: center;
+
+}
+#addContactTab > form input{
+  margin: 12px 0px;
+}
+form input[type=text], input[name=search]{
+  background-color: transparent;
+  border:1px solid white;
+  border-radius: 5px;
+  outline:none;
+  padding:10px;
+  color:white;
+
+}
+
+input[type=submit]{
+  border:1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  color:black;
+  padding:10px 40px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+h1{
+  font-family: chalkboard, sans-serif;
+  font-size: 20px;
+  word-spacing: 12px;
 }
