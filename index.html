@@ -7,24 +7,39 @@
 
     <!-- Fichier CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 <body>
-    <main>
+  <div class="container">
+    <div class="tab">
+      <button class="tablinks" onclick="contactTabs(event, 'menu')">Mes contacts</button>
+      <button class="tablinks" onclick="contactTabs(event, 'addContact')">Ajouter</button>
+    </div>
 
-        <section id="menu">
-            <input type="text" name="search">
-            <button type="button">+</button>
+    <div id="menu" class="tabcontent">
+      <section id="menu">
+          <input type="text" name="search">
 
+      </section>
 
+      <section id="contactList">
 
+      </section>
+    </div>
 
-        </section>
+    <div id="addContact" class="tabcontent">
+      <form>
+        <input type="text" id="name" name="name" placeholder="Nom">
+        <input type="text" id="phone" name="phone" placeholder="Numéro de Tel.">
+        <input type="text" id="email" name="email" placeholder="E-mail">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
 
-
-        <section id="contactList">
-
-        </section>
-    </main>
+  <!-- Fichier JS -->
+  <script src="js/script.js"></script>
 
 </body>
 </html>
